@@ -18,14 +18,8 @@ de los candidatos. En el proyecto se realizarán las siguientes tareas:
 variables en la intensión al voto. Separando en cada caso la intención al voto por AMLO y
 RAC. 
 
-2. Determinar grupos de variables que 
-   
- i) Sólo impacten a uno de los candidatos.
-
- ii) Impactena ambos pero que tengan mayor intensidad (peso) en uno de los candidatos.
-
- iii) impacten ambos candidatos por igual.
+2. Determinar grupos de variables que: Sólo impacten a uno de los candidatos, impacten a ambos pero que tengan mayor intensidad (peso) en uno de los candidatos e impacten ambos candidatos por igual.
 
 Se utilizará el modelo de RLM para detectar posibles asociaciones entre las variables, así como
 la intensidad de la asociación, i.e.
-(Imagenes\Imagen1.png)
+(Imagen1.png)
