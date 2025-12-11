@@ -22,4 +22,4 @@ RAC.
 
 Se utilizará el modelo de RLM para detectar posibles asociaciones entre las variables, así como
 la intensidad de la asociación, i.e.
-![imagen](Imagen1.png)
+![imagen](Imagenes/Imagen1.png)
