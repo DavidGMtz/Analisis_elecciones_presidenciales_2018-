@@ -22,4 +22,12 @@ RAC.
 
 Se utilizará el modelo de RLM para detectar posibles asociaciones entre las variables, así como
 la intensidad de la asociación, i.e.
+
 ![imagen](Imagenes/Imagen1.png)
+
+## Metodología
+El proyecto esta dividido en partes: 
+
+1. Primero, se obtienen los sub‑totales a nivel municipal para cada una de las variables presentes en las bases de datos de trabajo. En particular, la variable y_i se construye sumando y agregando los valores provenientes de los  [cómputos distritales](https://computos2018.ine.mx/#/descargaBase) hacia el nivel municipal. Posteriormente, se define un identificador único de municipio que permitirá vincular las distintas bases de datos. Todo este procedimiento se desarrolla en el script . Todo este procedimiento se desarrolla en el script `Votos.ipynb` usando, utilizando las bases `EDOScsv`, `LISTADO_CASILLAS_2018.csv`,  `presidencia.csv` y `Nombres_municipios.txt`, devolviendo la base `Votos_por_Municipio`.
+
+
