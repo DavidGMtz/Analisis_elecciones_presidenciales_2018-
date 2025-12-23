@@ -28,6 +28,9 @@ la intensidad de la asociación, i.e.
 ## Metodología
 El proyecto esta dividido en partes: 
 
-1. Primero, se obtienen los sub‑totales a nivel municipal para cada una de las variables presentes en las bases de datos de trabajo. En particular, la variable y_i se construye sumando y agregando los valores provenientes de los  [cómputos distritales](https://computos2018.ine.mx/#/descargaBase) hacia el nivel municipal. Posteriormente, se define un identificador único de municipio que permitirá vincular las distintas bases de datos. Todo este procedimiento se desarrolla en el script . Todo este procedimiento se desarrolla en el script `Votos.ipynb` usando, utilizando las bases `EDOScsv`, `LISTADO_CASILLAS_2018.csv`,  `presidencia.csv` y `Nombres_municipios.txt`, devolviendo la base `Votos_por_Municipio`.
+1.**Variables de respuesta**. Primero, se obtienen los sub‑totales a nivel municipal para cada una de las variables presentes en las bases de datos de trabajo. En particular, la variable y_i se construye sumando y agregando los valores provenientes de los  [cómputos distritales](https://computos2018.ine.mx/#/descargaBase) hacia el nivel municipal. Posteriormente, se define un identificador único de municipio que permitirá vincular las distintas bases de datos. Todo este procedimiento se desarrolla en el script `Votos.ipynb` utilizando las bases `EDOScsv`, `LISTADO_CASILLAS_2018.csv`,  `presidencia.csv` y `Nombres_municipios.txt`, devolviendo la base `Votos_por_Municipio`.
 
+2.**Covariables**. Las variables independientes x_{i,j} se obtendrán del censo extrayendo sub-totales a nivel municipio, en esta parte se usan los correspondientes archivos disponibles en `Bases_Censo`. 
+
+3. 
 
