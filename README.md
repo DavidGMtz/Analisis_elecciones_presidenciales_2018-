@@ -32,5 +32,5 @@ El proyecto esta dividido en partes:
 
 2.**Covariables**. Las variables independientes x_{i,j} se obtendrán del censo extrayendo sub-totales a nivel municipio, en esta parte se usan los correspondientes archivos disponibles en `Bases_Censo`. 
 
-3. 
+3.
 
