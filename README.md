@@ -1,36 +1,42 @@
-# Analisis_elecciones_presidenciales_2018
-Por completar-en cosntruccion
+    # Analisis_elecciones_presidenciales_2018
+    Por completar-en cosntruccion
 
-## Objetivo del análisis
-De todas las variables socioeconómicas del Censo de Población y Vivienda 2020 que pudieran
-tener algún grado de asociación con la intención al voto por los candidatos a la presiden
-cia Andrés Manuel López Obrador (AMLO) y Ricardo Anaya Cortés (RAC) se pretende identificar un
-subconjunto de estas que pudiera describir la intensión al voto en favor  de: 
+    Objetivo del análisis
 
-**AMLO** 
+Este proyecto tiene como objetivo analizar la relación entre variables socioeconómicas provenientes del Censo de Población y Vivienda 2020 y el comportamiento electoral observado en la elección presidencial de 2018 en México.
 
-**RAC**
+El análisis se enfoca en identificar subconjuntos de variables socioeconómicas que presentan asociación con la intención de voto a favor de los candidatos presidenciales:
 
-En otras palabras, se tiene un problema de selección de variables independiente para cada uno
-de los candidatos. En el proyecto se realizarán las siguientes tareas:
+Andrés Manuel López Obrador (AMLO)
 
-1. Obtener una estimación por intervalo de la intensidad (peso) que tiene cada una de estas
-variables en la intensión al voto. Separando en cada caso la intención al voto por AMLO y
-RAC. 
+Ricardo Anaya Cortés (RAC)
 
-2. Determinar grupos de variables que: Sólo impacten a uno de los candidatos, impacten a ambos pero que tengan mayor intensidad (peso) en uno de los candidatos e impacten ambos candidatos por igual.
+El problema se aborda como un ejercicio de selección de variables independientes de forma separada para cada candidato, con el fin de caracterizar patrones diferenciados de comportamiento electoral a nivel municipal.
 
-Se utilizará el modelo de RLM para detectar posibles asociaciones entre las variables, así como
-la intensidad de la asociación, i.e.
+Los objetivos específicos del proyecto son:
 
-![imagen](Imagenes/Imagen1.png)
+Estimar intervalos de confianza para la intensidad (peso) de cada variable socioeconómica en la intención de voto, considerando de manera independiente los resultados para AMLO y RAC.
+
+Identificar grupos de variables que:
+
+Influyan únicamente en uno de los candidatos.
+
+Influyan en ambos candidatos, pero con distinta magnitud.
+
+Influyan de manera similar en ambos candidatos.
+
+Para este propósito se emplea un modelo de regresión lineal múltiple, el cual permite evaluar asociaciones y cuantificar la magnitud de los efectos observados, es decir 
+    ![imagen](Imagenes/Imagen1.png)
 
 ## Metodología
 El proyecto esta dividido en partes: 
 
-1.**Variables de respuesta**. Primero, se obtienen los sub‑totales a nivel municipal para cada una de las variables presentes en las bases de datos de trabajo. En particular, la variable y_i se construye sumando y agregando los valores provenientes de los  [cómputos distritales](https://computos2018.ine.mx/#/descargaBase) hacia el nivel municipal. Posteriormente, se define un identificador único de municipio que permitirá vincular las distintas bases de datos. Todo este procedimiento se desarrolla en el script `Votos.ipynb` utilizando las bases `EDOScsv`, `LISTADO_CASILLAS_2018.csv`,  `presidencia.csv` y `Nombres_municipios.txt`, devolviendo la base `Votos_por_Municipio`.
+1.**Variables de respuesta**. 
+
+Primero, se construyen los subtotales a nivel municipal para las variables de interés a partir de las bases de datos electorales disponibles. En particular, la variable y_i se define mediante la agregación de los [cómputos distritales](https://computos2018.ine.mx/#/descargaBase) hacia el nivel municipal. 
+
+Posteriormente, se define un identificador único de municipio que permitirá vincular las distintas bases de datos. Todo este procedimiento se desarrolla en el script `Votos.ipynb` utilizando las bases `EDOScsv`, `LISTADO_CASILLAS_2018.csv`,  `presidencia.csv` y `Nombres_municipios.txt`, devolviendo la base `Votos_por_Municipio`.
 
 2.**Covariables**. Las variables independientes x_{i,j} se obtendrán del censo extrayendo sub-totales a nivel municipio, en esta parte se usan los correspondientes archivos disponibles en `Bases_Censo`. 
 
 3.
-
